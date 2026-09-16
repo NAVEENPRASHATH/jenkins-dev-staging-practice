@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                echo 'Reading hello.txt...'
+                bat 'type hello.txt'
             }
         }
 
